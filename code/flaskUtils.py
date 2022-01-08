@@ -109,7 +109,7 @@ def setContent():
 	elif checked == 'false' and (contentChunk in PPB.content) == True:
 		PPB.content.remove(contentChunk)
 
-	print PPB.content
+	print (PPB.content)
 	PPB.textStateWipe()
 	return ""
 
@@ -211,7 +211,7 @@ def setXLSettings():
 			PPB.textOrigin[0] = [4,1]
 			PPB.textOrigin[1] = [1,7]
 	else: 
-		print "Board is not set to XL"
+		print ("Board is not set to XL")
 
 	# Perform a reset of the board to eliminate the ghost text balls
 	PPB.colorFill(Color(0,0,0), True)
