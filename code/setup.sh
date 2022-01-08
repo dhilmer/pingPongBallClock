@@ -3,7 +3,7 @@
 sudo apt-get update
 
 #let's get flask installed
-sudo apt-get install python-pip
+sudo apt-get install python3-pip
 sudo pip install flask
 sudo pip install requests
 
