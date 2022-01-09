@@ -590,7 +590,7 @@ class PingPongBoard:
 				self.textOrigin[1] = [1,7]
 
 		# Calculate the LED count
-		self.led_count = self.num_balls * PIXEL_RATIO
+		self.led_count = self.num_balls * PIXEL_RATIO * 2
 
 		# Address possible font change
 		if self.fontName == 'slanted':
