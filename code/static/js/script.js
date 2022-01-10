@@ -12,7 +12,7 @@ function loadWebSettings(){
 
 			// BG Color
 			document.documentElement.style.setProperty('--main-bg-color', webPageSettings.mainBGColor);
-			document.querySelector('.page-color-preview').style.background = webPageSettings.mainBGColor;
+			document.querySelector('.page-color-preview').style.backgroundColor = webPageSettings.mainBGColor;
 			
 			// Board Type
 			document.getElementById('boardType').value = webPageSettings.boardType;
@@ -97,7 +97,7 @@ function setPageTitle(){
 }
 
 function setCustomPageColor(){
-	var color = document.querySelector('.page-color-preview').style.background
+	var color = document.querySelector('.page-color-preview').style.backgroundColor
 	document.documentElement.style.setProperty('--main-bg-color', color);
 
 	sendWebPageSettings();
